@@ -1,0 +1,32 @@
+.cmp-wrap .cmp-summary {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    margin: 20px 0;
+}
+
+.cmp-wrap .cmp-card {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 16px;
+}
+
+.cmp-wrap .cmp-card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+
+.cmp-wrap .cmp-danger {
+    color: #b32d2e;
+}
+
+.cmp-wrap .cmp-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cmp-wrap .cmp-note {
+    max-width: 760px;
+}

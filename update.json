@@ -1,0 +1,4 @@
+{
+  "version": "2.0.0",
+  "body": "A production-focused rebuild with preview-first cleanup, dated backup batches, explicit restore controls, stronger security, and native GitHub updates."
+}
