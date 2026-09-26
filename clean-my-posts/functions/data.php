@@ -97,7 +97,7 @@ function cmp_build_post_target(string $label, string $where, array $values, stri
     );
 }
 
-function cmp_clean_targets(array $selected_keys): array|WP_Error
+function cmp_clean_targets(array $selected_keys)
 {
     global $wpdb;
 
@@ -165,7 +165,7 @@ function cmp_clean_targets(array $selected_keys): array|WP_Error
     }
 }
 
-function cmp_clean_posts_for_target(array $target, int $batch_id, string $record_table): array|WP_Error
+function cmp_clean_posts_for_target(array $target, int $batch_id, string $record_table)
 {
     global $wpdb;
 
@@ -255,7 +255,7 @@ function cmp_capture_post(int $post_id): ?array
     );
 }
 
-function cmp_clean_orphan_meta(int $batch_id, string $record_table): array|WP_Error
+function cmp_clean_orphan_meta(int $batch_id, string $record_table)
 {
     global $wpdb;
 
@@ -295,7 +295,7 @@ function cmp_get_backup_batches(): array
     return $wpdb->get_results("SELECT * FROM {$table} ORDER BY created_at DESC LIMIT 100", ARRAY_A);
 }
 
-function cmp_restore_batch(int $batch_id): int|WP_Error
+function cmp_restore_batch(int $batch_id)
 {
     global $wpdb;
 

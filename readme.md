@@ -1,7 +1,7 @@
 # TN Clean My Posts
 
 Author: Techn
-Version: 2.0.0
+Version: 2.0.1
 Status: Production
 
 ## Purpose
@@ -42,3 +42,7 @@ clean-my-posts/
 ## Future Considerations
 
 - Background processing may be appropriate for sites that routinely clean hundreds of thousands of records.
+
+## Controller integration — 2.0.1
+
+Remove independent GitHub update checks and delegate updates to Techn Update Controller. Keep Beta readiness and existing feature settings, package identity and domain restrictions. Previous standalone GitHub update instructions are superseded.
